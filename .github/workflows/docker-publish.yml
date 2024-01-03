@@ -62,8 +62,8 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
           run: echo '${{ env.REGISTRY }}'
-          run: echo '${{ env.IMAGE_NAME }}'
-          run: echo '${{ steps.meta.outputs.tags }}'
+               echo '${{ env.IMAGE_NAME }}'
+               echo '${{ steps.meta.outputs.tags }}'
 
       # Extract metadata (tags, labels) for Docker
       # https://github.com/docker/metadata-action
